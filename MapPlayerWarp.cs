@@ -1,18 +1,14 @@
-﻿//マップからプレイヤーがワープできるようにするメイン部分です
-
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// マップからプレイヤーがワープできるようにするメイン部分です
+/// <summary>
 public class MapPlayerWarp : MonoBehaviour
 {
     [SerializeField] PlayerMove playerMove;
     [SerializeField] Transform nextPos;
-
-    void Start()
-    {
-        
-    }
 
     void Update()
     {

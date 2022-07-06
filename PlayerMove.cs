@@ -1,14 +1,13 @@
-﻿/*
-プレイヤーを移動させるスクリプトです
-*/
-
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Valve.VR;
 using DG.Tweening;
 using KanKikuchi.AudioManager;
 
+/// <summary>
+/// プレイヤーを移動させるスクリプトです
+/// <summary>
 public class PlayerMove : MonoBehaviour
 {
     [SerializeField] float smoothTime = 0.8f; //移動にかける時間
@@ -47,19 +46,8 @@ public class PlayerMove : MonoBehaviour
     }
 
     void Update () {
-
         MoveDOTween();
         MoveStateClear();
-
-        //デバッグ用です。本実装で生きてたら殺してください
-        /*
-        if(Input.GetKeyDown(KeyCode.UpArrow))
-        {
-            var hogevec = new Vector3(200, 0, -200); 
-            transform.position += hogevec;
-            targetPos += hogevec;
-        }
-        /*/
     }
 
     //移動後のポイントを更新して、初期化なりフェードアウトのセットをします

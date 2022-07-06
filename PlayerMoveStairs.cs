@@ -1,12 +1,11 @@
-﻿/*
-階段に当たった時の挙動です
-コライダーに応じて上下します
-*/
-
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// 階段に当たった時の挙動です
+/// コライダーに応じて上下します
+/// <summary>
 public class PlayerMoveStairs : MonoBehaviour
 {
     //Playerを動かすためのクラスを取得

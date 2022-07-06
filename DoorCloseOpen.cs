@@ -1,12 +1,10 @@
-﻿/*
-扉の開閉システム
-まだ悩み中
-/*/
-
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// 扉の開閉システム
+/// <summary>
 public class DoorCloseOpen : MonoBehaviour
 {
     [SerializeField] Material closeMaterial;

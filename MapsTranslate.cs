@@ -1,19 +1,14 @@
-﻿/*
-マップがプレイヤーの視界に常に入るように滑らかに移動します
-*/
-
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// マップがプレイヤーの視界に常に入るように滑らかに移動します
+/// <summary>
 public class MapsTranslate : MonoBehaviour
 {
     [SerializeField] Transform targetTransform = default;
     Vector3 velocity = Vector3.zero;
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()

@@ -1,14 +1,13 @@
-﻿/*
-プレイヤーの周りの矢印単体の制御です
-どの矢印が選択状態なのかをPlayerMoveが確認しに来ます
-どうせ制御自体は一括だから親オブジェクトから操作したほうが良さげかも
-*/
-
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using KanKikuchi.AudioManager;
 
+/// <summary>
+/// プレイヤーの周りの矢印単体の制御です
+/// どの矢印が選択状態なのかをPlayerMoveが確認しに来ます
+/// どうせ制御自体は一括だから親オブジェクトから操作したほうが良さげかも
+/// <summary>
 public class ArrowAnim : MonoBehaviour
 {
     //経過時間

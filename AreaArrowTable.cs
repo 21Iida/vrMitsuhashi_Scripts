@@ -1,13 +1,12 @@
-﻿/*
-矢印のオンオフ設定を空間ごとに設定します
-設定だけなので、ここでなにかオブジェクトを弄ったりはしていません
-設定はArrowSetが取得しに来ます
-*/
-
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// 矢印のオンオフ設定を空間ごとに設定します
+/// 設定だけなので、ここでなにかオブジェクトを弄ったりはしていません
+/// 設定はArrowSetが取得しに来ます
+/// <summary>
 public class AreaArrowTable : MonoBehaviour
 {
     //この場所で表示してよい矢印

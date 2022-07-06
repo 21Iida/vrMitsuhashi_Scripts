@@ -1,13 +1,12 @@
-﻿/*
-マップの表示を切り替えるやつです
-MapAreaで呼びます
-マップアイコンの管理をしているので、ステージを増やすごとにIconObjSetを実行してください
-*/
-
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// マップの表示を切り替えるやつです
+/// MapAreaで呼びます
+/// マップアイコンの管理をしているので、ステージを増やすごとにIconObjSetを実行してください
+/// <summary>
 public class MapChanger : MonoBehaviour
 {
     [SerializeField]

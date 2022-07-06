@@ -1,11 +1,10 @@
-﻿/*
-プレイヤーの周りの矢印のオンオフを切り替えます
-*/
-
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// プレイヤーの周りの矢印のオンオフを切り替えます
+/// <summary>
 public class ArrowSet : MonoBehaviour
 {
     //方向とboolのセット

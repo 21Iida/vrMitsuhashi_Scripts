@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using Valve.VR;
 
+/// <summary>
+/// 視線とトラッカーの入力からプレイヤーを移動させます
+/// <summary>
 public class ArrowMovePlayer : MonoBehaviour
 {
     //選択状態ならtrueにする、未選択状態でfalse
@@ -14,11 +17,6 @@ public class ArrowMovePlayer : MonoBehaviour
     //目的地設定
     [SerializeField] Vector3 targetPos = Vector3.zero;
     [SerializeField] Transform targetObj = default;
-
-    void Start()
-    {
-        
-    }
 
     void Update()
     {
@@ -32,7 +30,7 @@ public class ArrowMovePlayer : MonoBehaviour
     {
         targetObj = target;
         //ターゲット用のオブジェクトが設定されているならそっちへ向かうようにします
-        targetPos = targetObj.position;// - this.transform.parent.position;
+        targetPos = targetObj.position;
     }
 
     //非表示にされるとき、フラグをリセットします

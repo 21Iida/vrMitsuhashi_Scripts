@@ -1,12 +1,11 @@
-﻿/*
-マップのエリアの判定をします
-MapChangerを働かせます
-*/
-
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// マップのエリアの判定をします
+/// MapChangerを働かせます
+/// <summary>
 public class MapArea : MonoBehaviour
 {
     private enum AreaState

@@ -1,12 +1,12 @@
-﻿/*
-球体の名前を自動でセットしてくれます
-メインシーンで生きているやつがいたら殺してください
-*/
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
+/// <summary>
+/// 球体の名前を自動でセットしてくれます
+/// メインシーンで生きているやつがいたら殺してください
+/// <summary>
 public class RenameSphere : MonoBehaviour
 {
 

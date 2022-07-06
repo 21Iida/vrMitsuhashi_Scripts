@@ -1,11 +1,10 @@
-﻿/*
-ミニマップがプレイヤーに向くようにしています
-*/
-
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// ミニマップがプレイヤーに向くようにしています
+/// <summary>
 public class MapsRotate : MonoBehaviour
 {
     [SerializeField] Transform PlayerTransform = default;

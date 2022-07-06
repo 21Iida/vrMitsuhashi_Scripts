@@ -2,12 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// 次の移動場所を示す矢印を配置します
+/// <summary>
 public class AreaArrowGenerator : MonoBehaviour
 {
     [SerializeField] GameObject arrowPrefaf;
     [SerializeField] List<Transform> listTraget;
 
-    //設定に対して矢印プレハブを生成
+    //矢印プレハブを生成
     void Awake()
     {
         for(int i = 0; i < listTraget.Count; i++) {
@@ -19,12 +22,7 @@ public class AreaArrowGenerator : MonoBehaviour
         }
     }
 
-    void Update()
-    {
-        
-    }
-
-    //設定されている移動先にギズモを伸ばす
+    //設定されている移動先にギズモを伸ばすエディタ拡張
     void OnDrawGizmosSelected()
     {
         for(int i = 0; i < listTraget.Count; i++)
